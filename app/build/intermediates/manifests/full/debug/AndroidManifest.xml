@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="24"
+        android:minSdkVersion="23"
         android:targetSdkVersion="26" />
 
     <meta-data
@@ -24,9 +24,41 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.activity.HelloWorldActivity"
+            android:label="App/Activity/Hello World" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.activity.LaunchModeActivity"
+            android:label="App/Activity/Launch Mode" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.activity.ResultActivity"
+            android:label="App/Activity/Result" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.huixuegong.androiddevelop.adapter.ArrayAdapterActivity" />
+        <activity android:name="com.example.huixuegong.androiddevelop.adapter.SimpleAdapterActivity" />
+        <activity android:name="com.example.huixuegong.androiddevelop.adapter.BaseAdapterActivity" />
+        <activity android:name="com.example.huixuegong.androiddevelop.adapter.SimpleCursorAdapterActivity" />
     </application>
 
 </manifest>

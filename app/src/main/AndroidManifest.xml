@@ -13,9 +13,41 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.HelloWorldActivity"
+            android:label="App/Activity/Hello World">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LaunchModeActivity"
+            android:label="App/Activity/Launch Mode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ResultActivity"
+            android:label="App/Activity/Result">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".adapter.ArrayAdapterActivity" />
+        <activity android:name=".adapter.SimpleAdapterActivity" />
+        <activity android:name=".adapter.BaseAdapterActivity" />
+        <activity android:name=".adapter.SimpleCursorAdapterActivity"></activity>
     </application>
 
 </manifest>
