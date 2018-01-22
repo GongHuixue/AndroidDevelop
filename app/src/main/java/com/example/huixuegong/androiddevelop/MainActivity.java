@@ -25,11 +25,15 @@ public class MainActivity extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
 
         SimpleAdapter simpleAdapter;
         Intent intent = getIntent();
-        String path = intent.getStringExtra("com.example.android.apis.Path");
+        String path = intent.getStringExtra("com.example.huixuegong.androiddevelop.Path");
+
+        if(path == null) {
+            path = "";
+        }
 
         simpleAdapter = new SimpleAdapter(this, getData(path),
                 android.R.layout.simple_list_item_1, new String[]{"tile"}, new int[]{android.R.id.text1});
@@ -45,11 +49,12 @@ public class MainActivity extends ListActivity {
         String[] prefixPath;
         String prefixWithSlash;
         Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
-        mainIntent.addCategory(Intent.CATEGORY_SAMPLE_CODE);
+        mainIntent.addCategory(Intent.CATEGORY_UNIT_TEST);
 
         PackageManager pm = getPackageManager();
         List<ResolveInfo> activityList = pm.queryIntentActivities(mainIntent, 0);
         Map<String, Boolean> entries = new HashMap<String, Boolean>();
+        int activitySize = activityList.size();
 
         prefixWithSlash = path;
         if(path.equals("")) {
@@ -63,14 +68,15 @@ public class MainActivity extends ListActivity {
             Log.e(TAG, "There is no activity");
             return listData;
         }else {
-            for(int i = 0; i < activityList.size(); i++) {
+            Log.d(TAG, "There are " + activitySize + " Activity");
+            for(int i = 0; i < activitySize; i++) {
                 ResolveInfo info = activityList.get(i);
                 CharSequence labelSeq = info.loadLabel(pm);
                 String lable = (labelSeq != null) ? labelSeq.toString():info.activityInfo.name;
                 Log.d(TAG, "Index = " + i + ", prefixPath = " + ", prefixWithSlash = " + prefixWithSlash + ", Lable = " + lable);
                 if((prefixWithSlash.length() == 0) || lable.startsWith(prefixWithSlash)) {
                     String[] lablePath = lable.split("/");
-                    String nextLable = (prefixWithSlash == null) ? lablePath[0] : lablePath[prefixPath.length];
+                    String nextLable = (prefixPath == null) ? lablePath[0] : lablePath[prefixPath.length];
 
                     if((prefixPath != null ? prefixPath.length: 0) == lablePath.length - 1) {
                         addItem(listData, nextLable, activityIntent(
