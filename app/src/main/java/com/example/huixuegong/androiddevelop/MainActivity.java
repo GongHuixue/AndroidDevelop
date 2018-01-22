@@ -21,6 +21,7 @@ import java.util.Map;
 
 public class MainActivity extends ListActivity {
     private final static String TAG = MainActivity.class.getSimpleName();
+    private final static String intentAction = "com.example.huixuegong.androiddevelop";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,8 +49,8 @@ public class MainActivity extends ListActivity {
         List<Map<String, Object>> listData = new ArrayList<Map<String, Object>>();
         String[] prefixPath;
         String prefixWithSlash;
-        Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
-        mainIntent.addCategory(Intent.CATEGORY_UNIT_TEST);
+        Intent mainIntent = new Intent(intentAction, null);
+        mainIntent.addCategory(Intent.CATEGORY_SAMPLE_CODE);
 
         PackageManager pm = getPackageManager();
         List<ResolveInfo> activityList = pm.queryIntentActivities(mainIntent, 0);
@@ -109,7 +110,7 @@ public class MainActivity extends ListActivity {
     private Intent browseIntent(String path) {
         Intent intent = new Intent();
         intent.setClass(this, MainActivity.class);
-        intent.putExtra("com.example.android.apis.Path", path);
+        intent.putExtra("com.example.huixuegong.androiddevelop.Path", path);
         return intent;
     }
 
@@ -122,7 +123,7 @@ public class MainActivity extends ListActivity {
     private void addItem(List<Map<String, Object>> data, String name, Intent intent) {
         Map<String, Object> temp = new HashMap<String, Object>();
         temp.put("title", name);
-        temp.put("intnet", intent);
+        temp.put("intent", intent);
         data.add(temp);
     }
 
@@ -131,7 +132,7 @@ public class MainActivity extends ListActivity {
         Map<String, Object> map = (Map<String, Object>) lv.getItemAtPosition(position);
         Intent intent = new Intent((Intent)map.get("intent"));
         intent.addCategory(Intent.CATEGORY_SAMPLE_CODE);
-
+        Log.d(TAG, "position = " + position + ", intent = " + intent);
         startActivity(intent);
     }
 }

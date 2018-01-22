@@ -20,24 +20,24 @@
             android:name=".activity.HelloWorldActivity"
             android:label="@string/activity_hello_world">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.UNIT_TEST" />
+                <action android:name="com.example.huixuegong.androiddevelop" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
         <activity
             android:name=".activity.LaunchModeActivity"
             android:label="@string/activity_launch_mode">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.UNIT_TEST" />
+                <action android:name="com.example.huixuegong.androiddevelop" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
         <activity
             android:name=".activity.ResultActivity"
             android:label="@string/activity_result">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.UNIT_TEST" />
+                <action android:name="com.example.huixuegong.androiddevelop" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
         <!--Adapter Activity-->
@@ -45,24 +45,24 @@
             android:name=".adapter.ArrayAdapterActivity"
             android:label="@string/activity_array_adapter">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.UNIT_TEST" />
+                <action android:name="com.example.huixuegong.androiddevelop" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
         <activity
             android:name=".adapter.SimpleAdapterActivity"
             android:label="@string/activity_simple_adapter">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.UNIT_TEST" />
+                <action android:name="com.example.huixuegong.androiddevelop" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
         <activity
             android:name=".adapter.BaseAdapterActivity"
             android:label="@string/activity_base_adapter">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.UNIT_TEST" />
+                <action android:name="com.example.huixuegong.androiddevelop" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
         <activity android:name=".adapter.SimpleCursorAdapterActivity"></activity>
