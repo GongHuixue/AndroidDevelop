@@ -1,9 +1,14 @@
 <resources>
     <string name="app_name">AndroidDevelop</string>
+    <!--Define Activity Inner String-->
+    <string name="Hello_World">Hello World</string>
+    <string name="start_hello_world_activity">Start Hello World Activity</string>
+
     <!--Define Activity String-->
     <string name="activity_hello_world">Activity/Hello World</string>
     <string name="activity_result">Activity/Return Result</string>
     <string name="activity_launch_mode">Activity/Launch Mode</string>
+    <string name="activity_lifecycle">Activity/Life Cycle</string>
 
     <!--Define Adapter Activity String-->
     <string name="activity_array_adapter">Adapter/Array Adapter</string>

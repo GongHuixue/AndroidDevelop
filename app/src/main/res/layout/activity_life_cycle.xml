@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.huixuegong.androiddevelop.activity.HelloWorldActivity">
+    tools:context="com.example.huixuegong.androiddevelop.activity.LifeCycleActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/start_hello_world"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/Hello_World">
-    </TextView>
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/start_hello_world_activity"
+        android:textAllCaps="false">
+    </Button>
 
 </android.support.constraint.ConstraintLayout>
