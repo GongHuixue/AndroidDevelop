@@ -37,7 +37,7 @@ public class MainActivity extends ListActivity {
         }
 
         simpleAdapter = new SimpleAdapter(this, getData(path),
-                android.R.layout.simple_list_item_1, new String[]{"tile"}, new int[]{android.R.id.text1});
+                android.R.layout.simple_list_item_1, new String[]{"title"}, new int[]{android.R.id.text1});
 
         //Activity must extends ListActivity as using setListAdapter & getListView
         setListAdapter(simpleAdapter);
