@@ -3,12 +3,19 @@
     <!--Define Activity Inner String-->
     <string name="Hello_World">Hello World</string>
     <string name="start_hello_world_activity">Start Hello World Activity</string>
-
+    <string name="standard_launch_mode">Demo Standard Launch Mode Activity</string>
+    <string name="singletop_launch_mode">Demo Single Top Launch Mode Activity</string>
+    <string name="singletask_launch_mode">Demo Single Task Launch Mode Activity</string>
     <!--Define Activity String-->
     <string name="activity_hello_world">Activity/Hello World</string>
     <string name="activity_result">Activity/Return Result</string>
     <string name="activity_launch_mode">Activity/Launch Mode</string>
     <string name="activity_lifecycle">Activity/Life Cycle</string>
+        <!--Define Launch Mode-->
+    <string name="activity_standard">Activity/Launch Mode/Standard</string>
+    <string name="activity_single_top">Activity/Launch Mode/Single Top</string>
+    <string name="activity_single_task">Activity/Launch Mode/Single Task</string>
+
 
     <!--Define Adapter Activity String-->
     <string name="activity_array_adapter">Adapter/Array Adapter</string>

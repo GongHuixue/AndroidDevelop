@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.huixuegong.androiddevelop.activity.LaunchModeActivity">
+    tools:context="com.example.huixuegong.androiddevelop.activity.launchmode.LaunchModeActivity">
 
 </android.support.constraint.ConstraintLayout>
