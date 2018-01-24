@@ -12,6 +12,7 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -21,6 +22,7 @@
             android:label="@string/activity_hello_world">
             <intent-filter>
                 <action android:name="com.example.huixuegong.androiddevelop" />
+
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
@@ -29,6 +31,7 @@
             android:label="@string/activity_result">
             <intent-filter>
                 <action android:name="com.example.huixuegong.androiddevelop" />
+
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
@@ -37,33 +40,37 @@
             android:label="@string/activity_lifecycle">
             <intent-filter>
                 <action android:name="com.example.huixuegong.androiddevelop" />
+
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
         <activity
             android:name=".activity.launchmode.StandardActivity"
-            android:launchMode="standard"
-            android:label="@string/activity_standard">
+            android:label="@string/activity_standard"
+            android:launchMode="standard">
             <intent-filter>
                 <action android:name="com.example.huixuegong.androiddevelop" />
+
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
         <activity
             android:name=".activity.launchmode.SingleTopActivity"
-            android:launchMode="singleTop"
-            android:label="@string/activity_single_top">
+            android:label="@string/activity_single_top"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="com.example.huixuegong.androiddevelop" />
+
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
         <activity
             android:name=".activity.launchmode.SingleTaskActivity"
-            android:launchMode="singleTask"
-            android:label="@string/activity_single_task">
+            android:label="@string/activity_single_task"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="com.example.huixuegong.androiddevelop" />
+
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
@@ -73,6 +80,7 @@
             android:label="@string/activity_array_adapter">
             <intent-filter>
                 <action android:name="com.example.huixuegong.androiddevelop" />
+
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
@@ -81,6 +89,7 @@
             android:label="@string/activity_simple_adapter">
             <intent-filter>
                 <action android:name="com.example.huixuegong.androiddevelop" />
+
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
@@ -89,10 +98,12 @@
             android:label="@string/activity_base_adapter">
             <intent-filter>
                 <action android:name="com.example.huixuegong.androiddevelop" />
+
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
         <activity android:name=".adapter.SimpleCursorAdapterActivity" />
+        <activity android:name=".activity.SubActivity"></activity>
     </application>
 
 </manifest>

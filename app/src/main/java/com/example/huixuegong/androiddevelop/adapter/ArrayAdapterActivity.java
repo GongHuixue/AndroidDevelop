@@ -9,16 +9,14 @@ import android.widget.ListView;
 import com.example.huixuegong.androiddevelop.R;
 
 public class ArrayAdapterActivity extends AppCompatActivity {
-    private ListView listView;
-    private ArrayAdapter<String> arrayAdapter;
     private String[] os = {"Android", "Iphone", "Linux", "Ubuntu", "Sybain", "Flyme", "Mi"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_array_adapter);
 
-        listView = (ListView)findViewById(R.id.array_list);
-        arrayAdapter = new ArrayAdapter<String>(ArrayAdapterActivity.this, android.R.layout.simple_list_item_1, os);
+        ListView listView = (ListView)findViewById(R.id.array_list);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(ArrayAdapterActivity.this, android.R.layout.simple_list_item_1, os);
 
         listView.setAdapter(arrayAdapter);
     }
