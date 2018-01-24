@@ -18,10 +18,12 @@
     <string name="activity_standard">Activity/Launch Mode/Standard</string>
     <string name="activity_single_top">Activity/Launch Mode/Single Top</string>
     <string name="activity_single_task">Activity/Launch Mode/Single Task</string>
-
-
     <!--Define Adapter Activity String-->
     <string name="activity_array_adapter">Adapter/Array Adapter</string>
     <string name="activity_simple_adapter">Adapter/Simple Adapter </string>
     <string name="activity_base_adapter">Adapter/Base Adapter</string>
+    <!--Define BroadCast Receiver Activity String-->
+    <string name="activity_static">BroadcastReceiver/Static Register</string>
+    <string name="activity_dynamic">BroadcastReceiver/Dynamic Register </string>
+    <string name="activity_local">BroadcastReceiver/Local BroadcastReceiver</string>
 </resources>

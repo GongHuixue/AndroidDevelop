@@ -35,6 +35,7 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.SubActivity" />
         <activity
             android:name=".activity.LifeCycleActivity"
             android:label="@string/activity_lifecycle">
@@ -103,7 +104,34 @@
             </intent-filter>
         </activity>
         <activity android:name=".adapter.SimpleCursorAdapterActivity" />
-        <activity android:name=".activity.SubActivity"></activity>
+        <!--Broadcast Receiver Activity-->
+        <activity
+            android:name=".broadcast.StaticActivity"
+            android:label="@string/activity_static">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".broadcast.DynamicActivity"
+            android:label="@string/activity_dynamic">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".broadcast.LocalActivity"
+            android:label="@string/activity_local">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
