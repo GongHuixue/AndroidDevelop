@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context="com.example.huixuegong.androiddevelop.broadcast.StaticActivity">
 
+    <Button
+        android:id="@+id/btn_sendbroadcast"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/send_broadcast_receiver"
+        android:textAllCaps="false">
+    </Button>
+
 </android.support.constraint.ConstraintLayout>
