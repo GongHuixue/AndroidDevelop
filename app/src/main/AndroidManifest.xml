@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.huixuegong.androiddevelop">
 
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
-    <uses-permission android:name="android.permission.WRITEE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITEE_SECURE_SETTINGS" />
 
     <application
         android:allowBackup="true"
@@ -107,7 +107,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".adapter.SimpleCursorAdapterActivity" />
-        <!--Broadcast Receiver Activity-->
+        <!-- Broadcast Receiver Activity -->
         <activity
             android:name=".broadcast.StaticActivity"
             android:label="@string/activity_static">
@@ -135,13 +135,62 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
+        <!-- Data Storage Activity -->
+        <activity
+            android:name=".storage.file.FileActivity"
+            android:label="@string/activity_file">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
 
-        <receiver android:name=".broadcast.MyBroadcastReceiver"
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".storage.sqlite.SqliteActivity"
+            android:label="@string/activity_sqlite">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".storage.sharedpreferences.SharedActivity"
+            android:label="@string/activity_shared">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <!--Define ContentProvider Activity-->
+        <activity
+            android:name=".contentProvider.ContentProviderActivity"
+            android:label="@string/activity_contentprovider">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!--Define Receiver-->
+        <receiver
+            android:name=".broadcast.MyBroadcastReceiver"
             android:exported="false">
             <intent-filter>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
+
+        <!--Define Content Provider-->
+        <provider
+            android:authorities="com.example.huixuegong.androiddevelop"
+            android:name=".contentProvider.DatabaseProvider"
+            android:enabled="true"
+            android:exported="true">
+        </provider>
+
     </application>
 
 </manifest>

@@ -11,6 +11,14 @@
     <string name="send_broadcast_receiver">Send Broadcast Receiver</string>
     <string name="dynamic_broadcast_receiver">Send Dynamic Broadcast Receiver</string>
     <string name="local_broadcast_receiver">Send Local Broadcast Receiver</string>
+    <string name="shared_set">Set</string>
+    <string name="shared_get">Get</string>
+    <string name="sql_create">Create</string>
+    <string name="sql_add">Add</string>
+    <string name="sql_del">Del</string>
+    <string name="sql_update">Update</string>
+    <string name="sql_query">Query</string>
+
 
     <!--Define Activity String-->
     <string name="activity_hello_world">Activity/Hello World</string>
@@ -29,4 +37,10 @@
     <string name="activity_static">BroadcastReceiver/Static Register</string>
     <string name="activity_dynamic">BroadcastReceiver/Dynamic Register </string>
     <string name="activity_local">BroadcastReceiver/Local BroadcastReceiver</string>
+    <!--Define Data Storage Activity String-->
+    <string name="activity_file">Data Storage/File</string>
+    <string name="activity_shared">Data Storage/Shared Preference</string>
+    <string name="activity_sqlite">BroadcastReceiver/SQLite</string>
+    <!--Define Content Provider Activity String-->
+    <string name="activity_contentprovider">ContentProvider/content provider</string>
 </resources>
