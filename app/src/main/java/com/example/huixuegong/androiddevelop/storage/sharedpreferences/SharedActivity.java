@@ -27,6 +27,7 @@ public class SharedActivity extends Activity {
                 editor.putInt("age", 28);
                 editor.putBoolean("married", false);
                 editor.apply();
+                Toast.makeText(SharedActivity.this, "set name: Tom, Age = 28", Toast.LENGTH_SHORT).show();
             }
         });
 

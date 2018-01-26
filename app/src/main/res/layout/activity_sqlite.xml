@@ -9,13 +9,14 @@
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical|center_horizontal">
 
         <Button
             android:id="@+id/btn_create"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
+            android:layout_margin="10dp"
             android:text="@string/sql_create">
         </Button>
 
@@ -24,6 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
+            android:layout_margin="10dp"
             android:text="@string/sql_add">
         </Button>
         <Button
@@ -31,6 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
+            android:layout_margin="10dp"
             android:text="@string/sql_del">
         </Button>
         <Button
@@ -38,6 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
+            android:layout_margin="10dp"
             android:text="@string/sql_update">
         </Button>
         <Button
@@ -45,6 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
+            android:layout_margin="10dp"
             android:text="@string/sql_query">
         </Button>
     </LinearLayout>

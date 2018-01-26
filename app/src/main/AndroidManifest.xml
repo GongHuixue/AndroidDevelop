@@ -163,7 +163,7 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <!--Define ContentProvider Activity-->
+        <!-- Define ContentProvider Activity -->
         <activity
             android:name=".contentProvider.ContentProviderActivity"
             android:label="@string/activity_contentprovider">
@@ -174,7 +174,38 @@
             </intent-filter>
         </activity>
 
-        <!--Define Receiver-->
+        <!-- Define ICP Activity -->
+        <activity
+            android:name=".icp.aidl.AidlActivity"
+            android:label="@string/activity_aidl">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!--Define Serial Activity-->
+        <activity
+            android:name=".searial.searializable.SerializableActivity"
+            android:label="@string/activity_serialize">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".searial.parcelable.ParceableActivity"
+            android:label="@string/activity_parcel">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- Define Receiver -->
         <receiver
             android:name=".broadcast.MyBroadcastReceiver"
             android:exported="false">
@@ -183,13 +214,17 @@
             </intent-filter>
         </receiver>
 
-        <!--Define Content Provider-->
+        <!-- Define Content Provider -->
         <provider
-            android:authorities="com.example.huixuegong.androiddevelop"
             android:name=".contentProvider.DatabaseProvider"
+            android:authorities="com.example.huixuegong.androiddevelop"
             android:enabled="true"
-            android:exported="true">
-        </provider>
+            android:exported="true" />
+
+        <service
+            android:name=".icp.aidl.AddService"
+            android:enabled="true"
+            android:exported="true" />
 
     </application>
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.huixuegong.androiddevelop.storage.sharedpreferences.SharedActivity">
+    tools:context="com.example.huixuegong.androiddevelop.searial.searializable.SerializableActivity">
 
     <LinearLayout
         android:layout_height="match_parent"
@@ -12,19 +12,28 @@
         android:orientation="vertical"
         android:gravity="center_vertical|center_horizontal">
 
-        <Button
-            android:id="@+id/btn_shared_set"
+        <!--<Button
+            android:id="@+id/btn_store"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/shared_set">
+            android:text="@string/store_serializable">
         </Button>
 
         <Button
-            android:id="@+id/btn_shared_get"
+            android:id="@+id/btn_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/store_serializable">
+        </Button>-->
+
+        <Button
+            android:id="@+id/btn_send"
             android:layout_margin="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/shared_get">
+            android:textAllCaps="false"
+            android:text="@string/send_serializable">
         </Button>
     </LinearLayout>
 

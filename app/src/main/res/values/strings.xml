@@ -18,6 +18,9 @@
     <string name="sql_del">Del</string>
     <string name="sql_update">Update</string>
     <string name="sql_query">Query</string>
+    <string name="store_serializable">Store Serializable</string>
+    <string name="send_serializable">Send Serializable</string>
+    <string name="send_parcelable">Send Parcelable</string>
 
 
     <!--Define Activity String-->
@@ -40,7 +43,12 @@
     <!--Define Data Storage Activity String-->
     <string name="activity_file">Data Storage/File</string>
     <string name="activity_shared">Data Storage/Shared Preference</string>
-    <string name="activity_sqlite">BroadcastReceiver/SQLite</string>
+    <string name="activity_sqlite">Data Storage/SQLite</string>
     <!--Define Content Provider Activity String-->
     <string name="activity_contentprovider">ContentProvider/content provider</string>
+    <!--Define AIDL Activity-->
+    <string name="activity_aidl">ICP/Aidl</string>
+    <!--Deine Serializable-->
+    <string name="activity_serialize">Serializable/Serializable</string>
+    <string name="activity_parcel">Serializable/Parcelable</string>
 </resources>

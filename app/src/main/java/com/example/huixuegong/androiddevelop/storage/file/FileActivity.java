@@ -28,7 +28,7 @@ public class FileActivity extends Activity {
 
         edit = findViewById(R.id.file_edit);
         String input_text = load();
-        if(!TextUtils.isEmpty(input_text)) {
+        if(input_text.length() > 0) {
             edit.setText(input_text);
             edit.setSelection(input_text.length());
             Toast.makeText(FileActivity.this, input_text, Toast.LENGTH_LONG).show();
