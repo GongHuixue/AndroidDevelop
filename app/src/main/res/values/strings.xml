@@ -46,9 +46,10 @@
     <string name="activity_sqlite">Data Storage/SQLite</string>
     <!--Define Content Provider Activity String-->
     <string name="activity_contentprovider">ContentProvider/content provider</string>
-    <!--Define AIDL Activity-->
+    <!--Define ICP Activity-->
     <string name="activity_aidl">ICP/Aidl</string>
-    <!--Deine Serializable-->
+    <string name="activity_messenger">ICP/Messenger</string>
+    <!--Define Serializable-->
     <string name="activity_serialize">Serializable/Serializable</string>
     <string name="activity_parcel">Serializable/Parcelable</string>
 </resources>
