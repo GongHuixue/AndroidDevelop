@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.WRITEE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -193,6 +195,15 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".icp.socket.TcpActivity"
+            android:label="@string/activity_tcp">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
 
         <!-- Define Serial Activity -->
         <activity
@@ -214,12 +225,13 @@
             </intent-filter>
         </activity>
 
-        <!--Define Service Activity-->
+        <!-- Define Service Activity -->
         <activity
             android:name=".service.IntentServiceActivity"
             android:label="@string/activity_service">
             <intent-filter>
                 <action android:name="com.example.huixuegong.androiddevelop" />
+
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
@@ -256,12 +268,16 @@
                 <action android:name="com.example.huixuegong.androiddevelop.MessengerService" />
             </intent-filter>
         </service>
-
         <service
             android:name=".service.MyIntentService"
             android:exported="false" />
         <service
             android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".icp.socket.TcpService"
             android:enabled="true"
             android:exported="true"></service>
     </application>

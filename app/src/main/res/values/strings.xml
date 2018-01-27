@@ -49,6 +49,7 @@
     <!--Define ICP Activity-->
     <string name="activity_aidl">ICP/Aidl</string>
     <string name="activity_messenger">ICP/Messenger</string>
+    <string name="activity_tcp">ICP/Socket/TCP</string>
     <!--Define Serializable-->
     <string name="activity_serialize">Serializable/Serializable</string>
     <string name="activity_parcel">Serializable/Parcelable</string>
