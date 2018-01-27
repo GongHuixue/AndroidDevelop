@@ -214,6 +214,16 @@
             </intent-filter>
         </activity>
 
+        <!--Define Service Activity-->
+        <activity
+            android:name=".service.IntentServiceActivity"
+            android:label="@string/activity_service">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
         <!-- Define Receiver -->
         <receiver
             android:name=".broadcast.MyBroadcastReceiver"
@@ -235,18 +245,25 @@
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.example.huixuegong.androiddevelop.AddService"/>
+                <action android:name="com.example.huixuegong.androiddevelop.AddService" />
             </intent-filter>
         </service>
-
         <service
             android:name=".icp.messenger.MessengerService"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.example.huixuegong.androiddevelop.MessengerService"/>
+                <action android:name="com.example.huixuegong.androiddevelop.MessengerService" />
             </intent-filter>
         </service>
+
+        <service
+            android:name=".service.MyIntentService"
+            android:exported="false" />
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>

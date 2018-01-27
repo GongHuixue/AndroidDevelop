@@ -52,4 +52,6 @@
     <!--Define Serializable-->
     <string name="activity_serialize">Serializable/Serializable</string>
     <string name="activity_parcel">Serializable/Parcelable</string>
+    <!--Define IntentActivity-->
+    <string name="activity_service">Service/Intent Service</string>
 </resources>
