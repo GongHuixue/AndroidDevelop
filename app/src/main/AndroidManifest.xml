@@ -204,6 +204,14 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".icp.binderpool.BinderPoolActivity"
+            android:label="@string/activity_binderpool">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
 
         <!-- Define Serial Activity -->
         <activity
@@ -275,11 +283,14 @@
             android:name=".service.MyService"
             android:enabled="true"
             android:exported="true" />
-
         <service
             android:name=".icp.socket.TcpService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
+        <service
+            android:name=".icp.binderpool.BinderPoolService"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>

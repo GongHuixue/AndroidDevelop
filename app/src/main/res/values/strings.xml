@@ -50,6 +50,7 @@
     <string name="activity_aidl">ICP/Aidl</string>
     <string name="activity_messenger">ICP/Messenger</string>
     <string name="activity_tcp">ICP/Socket/TCP</string>
+    <string name="activity_binderpool">ICP/BinderPool/Binder Pool</string>
     <!--Define Serializable-->
     <string name="activity_serialize">Serializable/Serializable</string>
     <string name="activity_parcel">Serializable/Parcelable</string>

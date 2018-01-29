@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.huixuegong.androiddevelop.icp.binderpool.BinderPoolActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edittext_num1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="123"
+            android:inputType="number">
+        </EditText>
+
+        <EditText
+            android:id="@+id/edittext_num2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ems="10"
+            android:hint="456"
+            android:inputType="number">
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/sql_add"
+            android:textAllCaps="false">
+        </Button>
+
+        <TextView
+            android:id="@+id/add_result"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp">
+        </TextView>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/edittext_num3"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="123"
+                android:inputType="number">
+            </EditText>
+
+            <EditText
+                android:id="@+id/edittext_num4"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:hint="456"
+                android:inputType="number">
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_del"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/sql_del"
+                android:textAllCaps="false">
+            </Button>
+
+            <TextView
+                android:id="@+id/del_result"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
