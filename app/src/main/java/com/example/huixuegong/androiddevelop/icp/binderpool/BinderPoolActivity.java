@@ -23,7 +23,7 @@ public class BinderPoolActivity extends Activity {
     private EditText etNum4;
     private TextView textDel;
     private Button btnDel;
-    
+
     private IAdd mAddService;
     private IDel mDelService;
 
