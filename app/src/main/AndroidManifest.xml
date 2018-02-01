@@ -245,6 +245,44 @@
             </intent-filter>
         </activity>
 
+        <!--Define View Activity-->
+        <activity
+            android:name=".view.scroll.ScrollerActivity"
+            android:label="@string/activity_scroller">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.scroll.ScrollActivity"
+            android:label="@string/activity_scroll">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.scroll.AnimationActivity"
+            android:label="@string/activity_animation">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.scroll.LayoutParamsActivity"
+            android:label="@string/activity_layoutparams">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.scroll.ViewMoveActivity" />
         <!-- Define Receiver -->
         <receiver
             android:name=".broadcast.MyBroadcastReceiver"
@@ -293,10 +331,6 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".view.scroll.ViewMoveActivity" />
-        <activity android:name=".view.scroll.ScrollActivity" />
-        <activity android:name=".view.scroll.AnimationActivity" />
-        <activity android:name=".view.scroll.LayoutParamsActivity"></activity>
     </application>
 
 </manifest>

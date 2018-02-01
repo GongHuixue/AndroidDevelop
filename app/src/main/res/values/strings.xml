@@ -56,4 +56,9 @@
     <string name="activity_parcel">Serializable/Parcelable</string>
     <!--Define IntentActivity-->
     <string name="activity_service">Service/Intent Service</string>
+    <!--Define View Move Activity-->
+    <string name="activity_scroll">View/Scroll/ScrollTo ScrollBy Demo</string>
+    <string name="activity_scroller">View/Scroll/Scroller Demo</string>
+    <string name="activity_animation">View/Scroll/Animation Demo</string>
+    <string name="activity_layoutparams">View/Scroll/LayoutParams Demo</string>
 </resources>

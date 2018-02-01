@@ -14,7 +14,8 @@ public class ViewMoveActivity extends ListActivity {
     private String[] mListData = new String[] {
             "ScrollTo ScrollBy Demo",
             "Animation Demo",
-            "LayoutParams Demo"
+            "LayoutParams Demo",
+            "Scroller Demo"
     };
 
     @Override
