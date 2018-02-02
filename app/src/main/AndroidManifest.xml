@@ -245,7 +245,7 @@
             </intent-filter>
         </activity>
 
-        <!--Define View Activity-->
+        <!-- Define View Activity -->
         <activity
             android:name=".view.scroll.ScrollerActivity"
             android:label="@string/activity_scroller">
@@ -282,7 +282,18 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.scroll.ViewMoveActivity" />
+        <!-- <activity android:name=".view.scroll.ViewMoveActivity" /> -->
+        <!--Define Custom View Activity-->
+        <activity
+            android:name=".customizeui.SmallBarActivity"
+            android:label="@string/activity_smallbar">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
         <!-- Define Receiver -->
         <receiver
             android:name=".broadcast.MyBroadcastReceiver"
@@ -330,6 +341,7 @@
             android:name=".icp.binderpool.BinderPoolService"
             android:enabled="true"
             android:exported="true" />
+
 
     </application>
 

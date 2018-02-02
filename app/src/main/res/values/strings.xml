@@ -61,4 +61,7 @@
     <string name="activity_scroller">View/Scroll/Scroller Demo</string>
     <string name="activity_animation">View/Scroll/Animation Demo</string>
     <string name="activity_layoutparams">View/Scroll/LayoutParams Demo</string>
+    <!--Define Custom View Activity-->
+    <string name="activity_smallbar">Custom UI/Small Bar</string>
+
 </resources>
