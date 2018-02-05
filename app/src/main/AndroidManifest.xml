@@ -282,8 +282,37 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
+        <!-- Define View Drawable Activity -->
+        <activity
+            android:name=".view.drawable.StateListDrawableActivity"
+            android:label="@string/activity_stateListDrawable">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.drawable.LayerDrawableActivity"
+            android:label="@string/activity_layerDrawable">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.drawable.AnimationDrawableActivity"
+            android:label="@string/activity_animationDrawable">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
         <!-- <activity android:name=".view.scroll.ViewMoveActivity" /> -->
-        <!--Define Custom View Activity-->
+        <!-- Define Custom View Activity -->
         <activity
             android:name=".customizeui.SmallBarActivity"
             android:label="@string/activity_smallbar">
