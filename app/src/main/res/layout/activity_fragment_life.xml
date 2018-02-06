@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|center_vertical"
+    tools:context="com.example.huixuegong.androiddevelop.fragment.lifestyle.FragmentLifeActivity">
+
+    <LinearLayout
+        android:id="@+id/linerContainer"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="100dp">
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:text="start one activity"/>
+    <Button
+        android:id="@+id/add_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:text="add fragment"/>
+    <Button
+        android:id="@+id/replace_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:text="replace fragment"/>
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:text="exist"/>
+
+
+</LinearLayout>

@@ -322,6 +322,17 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
+        <!-- Define Fragment Activity -->
+        <activity
+            android:name=".fragment.lifestyle.FragmentLifeActivity"
+            android:label="@string/activity_fragmentlifestyle">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
 
         <!-- Define Receiver -->
         <receiver
@@ -370,8 +381,6 @@
             android:name=".icp.binderpool.BinderPoolService"
             android:enabled="true"
             android:exported="true" />
-
-
     </application>
 
 </manifest>

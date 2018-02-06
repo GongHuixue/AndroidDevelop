@@ -66,5 +66,6 @@
     <string name="activity_animationDrawable">View/Drawable/Animation</string>
     <!--Define Custom View Activity-->
     <string name="activity_smallbar">Custom UI/Small Bar</string>
+    <string name="activity_fragmentlifestyle">Fragment/Life Cycle</string>
 
 </resources>
