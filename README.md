@@ -1,5 +1,6 @@
 # AndroidDevelop
 This android project record the android develop skills
+
 1:Activity
 -->Activity Launch Mode
 -->Activity Life Cycle
