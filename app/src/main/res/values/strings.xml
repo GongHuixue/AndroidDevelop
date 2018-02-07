@@ -68,5 +68,7 @@
     <string name="activity_smallbar">Custom UI/Small Bar</string>
     <string name="activity_fragmentlifestyle">Fragment/Life Cycle</string>
     <string name="activity_bookfragment">Fragment/Book List</string>
+    <!--Define Window Activity Test-->
+    <string name="activity_windowManager">Window/Float Button</string>
 
 </resources>

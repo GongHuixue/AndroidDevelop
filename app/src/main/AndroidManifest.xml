@@ -6,6 +6,8 @@
     <uses-permission android:name="android.permission.WRITEE_SECURE_SETTINGS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
         android:allowBackup="true"
@@ -341,7 +343,16 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
+        <!--Define Window Activity-->
+        <activity
+            android:name=".window.WindowActivity"
+            android:label="@string/activity_windowManager">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
 
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
         <!-- Define Receiver -->
         <receiver
             android:name=".broadcast.MyBroadcastReceiver"
