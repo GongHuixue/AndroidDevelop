@@ -70,5 +70,7 @@
     <string name="activity_bookfragment">Fragment/Book List</string>
     <!--Define Window Activity Test-->
     <string name="activity_windowManager">Window/Float Button</string>
+    <!--Define Thread Activity Test-->
+    <string name="activity_thread">Thread/Thread Demo</string>
 
 </resources>
