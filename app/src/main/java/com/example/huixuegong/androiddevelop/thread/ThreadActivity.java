@@ -23,6 +23,7 @@ public class ThreadActivity extends Activity {
     private static Context mContext;
 
     private static HandlerThread handlerThread;
+    private Handler handler;
     private Thread thread;
     private Runnable runnable;
     private static Handler mainHandler = new MainHandler();
@@ -59,6 +60,7 @@ public class ThreadActivity extends Activity {
                     Log.d(TAG, "Receive Msg from HandlerThread");
                     Toast.makeText(mContext, "Current Thread id is " + String.valueOf(threadId), Toast.LENGTH_SHORT).show();
                     try {
+                        Thread.sleep(100);
                         if (handlerThread != null) {
                             handlerThread.quit();
                         }
@@ -122,10 +124,16 @@ public class ThreadActivity extends Activity {
             public void onClick(View v) {
                 handlerThread = new HandlerThread("HandlerThread");
                 handlerThread.start();
-                Message msg = mainHandler.obtainMessage();
-                msg.what = HANDLER_MSG;
-                msg.obj = android.os.Process.myTid();
-                mainHandler.sendMessage(msg);
+                handler = new Handler(handlerThread.getLooper());
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        Message msg = mainHandler.obtainMessage();
+                        msg.what = HANDLER_MSG;
+                        msg.obj = android.os.Process.myTid();
+                        mainHandler.sendMessage(msg);
+                    }
+                });
             }
         });
 
