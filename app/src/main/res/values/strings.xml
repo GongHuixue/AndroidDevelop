@@ -73,5 +73,6 @@
     <!--Define Thread Activity Test-->
     <string name="activity_thread">Thread/Thread Demo</string>
     <string name="activity_threadpool">Thread/Thread Pool Demo</string>
-
+    <!--Define Design Mode Activity-->
+    <string name="activity_singleInstance">Design Mode/Singleton</string>
 </resources>
