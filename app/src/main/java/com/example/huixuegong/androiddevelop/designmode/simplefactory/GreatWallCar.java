@@ -5,6 +5,7 @@ package com.example.huixuegong.androiddevelop.designmode.simplefactory;
  */
 
 public class GreatWallCar implements ICar {
+    public final static int ID = 1;
     public String createCar() {
         return "Create Wall";
     }

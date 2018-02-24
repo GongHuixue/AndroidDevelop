@@ -24,7 +24,7 @@ public class SimpleFactoryActivity extends Activity {
         byd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                car = factory.createBydCar();
+                car = factory.createCarName(BydCar.ID);
                 Toast.makeText(SimpleFactoryActivity.this, "Create Car Name = " + car.createCar(), Toast.LENGTH_SHORT).show();
             }
         });
@@ -32,7 +32,7 @@ public class SimpleFactoryActivity extends Activity {
         greatewall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                car = factory.createGreatWallCar();
+                car = factory.createCarName(GreatWallCar.ID);
                 Toast.makeText(SimpleFactoryActivity.this, "Create Car Name = " + car.createCar(), Toast.LENGTH_SHORT).show();
             }
         });

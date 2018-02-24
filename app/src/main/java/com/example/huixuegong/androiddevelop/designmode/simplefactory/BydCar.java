@@ -5,6 +5,7 @@ package com.example.huixuegong.androiddevelop.designmode.simplefactory;
  */
 
 public class BydCar implements ICar{
+    public static final int ID = 0;
     public String createCar() {
         return "BYD";
     }
