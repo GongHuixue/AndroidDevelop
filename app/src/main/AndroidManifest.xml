@@ -372,7 +372,7 @@
             </intent-filter>
         </activity>
 
-        <!--Define Design Mode Activity-->
+        <!-- Define Design Mode Activity -->
         <activity
             android:name=".designmode.singleInstance.SingleInstanceActivity"
             android:label="@string/activity_singleInstance">
@@ -382,7 +382,15 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".designmode.simplefactory.SimpleFactoryActivity"
+            android:label="@string/activity_simplefactory">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
 
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
 
         <!-- Define Receiver -->
         <receiver
