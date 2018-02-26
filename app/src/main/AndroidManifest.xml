@@ -427,6 +427,15 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".designmode.adapter.AdapterActivity"
+            android:label="@string/activity_adapter">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
 
         <!-- Define Receiver -->
         <receiver

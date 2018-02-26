@@ -81,5 +81,6 @@
     <string name="activity_abstractfactory">Design Mode/Abstract Factory</string>
     <string name="activity_observer">Design Mode/Observer</string>
     <string name="activity_proxy">Design Mode/Proxy</string>
+    <string name="activity_adapter">Design Mode/Adapter</string>
 
 </resources>
