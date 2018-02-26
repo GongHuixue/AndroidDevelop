@@ -2,6 +2,7 @@
     <string name="app_name">AndroidDevelop</string>
     <!--Define Activity Inner String-->
     <string name="Hello_World">Hello World</string>
+    <string name="proxy">Proxy Demo</string>
     <string name="start_hello_world_activity">Start Hello World Activity</string>
     <string name="standard_launch_mode">Demo Standard Launch Mode Activity</string>
     <string name="singletop_launch_mode">Demo Single Top Launch Mode Activity</string>
@@ -79,5 +80,6 @@
     <string name="activity_factory">Design Mode/Factory</string>
     <string name="activity_abstractfactory">Design Mode/Abstract Factory</string>
     <string name="activity_observer">Design Mode/Observer</string>
+    <string name="activity_proxy">Design Mode/Proxy</string>
 
 </resources>
