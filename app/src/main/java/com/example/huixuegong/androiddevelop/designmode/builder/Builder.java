@@ -6,5 +6,5 @@ package com.example.huixuegong.androiddevelop.designmode.builder;
 
 public interface Builder {
     public void buildBYD();
-    public String getCar();
+    public CarProduct getCar();
 }
