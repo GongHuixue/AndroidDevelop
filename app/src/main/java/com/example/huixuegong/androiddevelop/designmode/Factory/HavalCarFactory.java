@@ -5,7 +5,7 @@ package com.example.huixuegong.androiddevelop.designmode.Factory;
  */
 
 public class HavalCarFactory extends CarFactory {
-    public Car createCar() {
-        return new
+    public Car createCar(int Id) {
+        return new HavalCar(Id);
     }
 }

@@ -5,5 +5,5 @@ package com.example.huixuegong.androiddevelop.designmode.Factory;
  */
 
 public abstract class CarFactory {
-    public abstract Car createCar();
+    public abstract Car createCar(int Id);
 }

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.huixuegong.androiddevelop.designmode.Factory.FactoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:id="@+id/byd_tang"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="create byd tang"/>
+
+        <Button
+            android:id="@+id/byd_song"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="create byd song"/>
+
+        <Button
+            android:id="@+id/byd_yuan"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="create byd yuan"/>
+
+        <Button
+            android:id="@+id/haval_h2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="create haval h2"/>
+
+        <Button
+            android:id="@+id/haval_h6"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="create haval h6"/>
+
+        <Button
+            android:id="@+id/haval_h9"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="create haval h9"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
