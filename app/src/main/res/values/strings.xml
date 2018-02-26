@@ -78,4 +78,6 @@
     <string name="activity_simplefactory">Design Mode/Simple Factory</string>
     <string name="activity_factory">Design Mode/Factory</string>
     <string name="activity_abstractfactory">Design Mode/Abstract Factory</string>
+    <string name="activity_observer">Design Mode/Observer</string>
+
 </resources>
