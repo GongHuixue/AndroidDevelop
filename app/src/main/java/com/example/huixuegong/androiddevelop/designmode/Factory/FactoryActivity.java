@@ -67,7 +67,7 @@ public class FactoryActivity extends Activity {
         h6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                byd = havalFactory.createCar(HavalCar.H6);
+                haval = havalFactory.createCar(HavalCar.H6);
                 Toast.makeText(FactoryActivity.this, "CarName = " + haval.carName() + ",CarPrize = " + haval.carPrize(), Toast.LENGTH_SHORT).show();
             }
         });
@@ -75,7 +75,7 @@ public class FactoryActivity extends Activity {
         h9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                byd = havalFactory.createCar(HavalCar.H9);
+                haval = havalFactory.createCar(HavalCar.H9);
                 Toast.makeText(FactoryActivity.this, "CarName = " + haval.carName() + ",CarPrize = " + haval.carPrize(), Toast.LENGTH_SHORT).show();
             }
         });
