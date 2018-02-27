@@ -82,5 +82,5 @@
     <string name="activity_observer">Design Mode/Observer</string>
     <string name="activity_proxy">Design Mode/Proxy</string>
     <string name="activity_adapter">Design Mode/Adapter</string>
-
+    <string name="activity_builder">Design Mode/Builder</string>
 </resources>
