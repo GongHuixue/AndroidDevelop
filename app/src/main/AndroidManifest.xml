@@ -445,6 +445,16 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".designmode.strategy.StrategeActivity"
+            android:label="@string/activity_strategy">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
 
 
         <!-- Define Receiver -->
@@ -494,7 +504,6 @@
             android:name=".icp.binderpool.BinderPoolService"
             android:enabled="true"
             android:exported="true" />
-
 
     </application>
 
