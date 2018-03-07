@@ -312,6 +312,16 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".view.animation.AnimationDemoActivity"
+            android:label="@string/activity_animationDemo">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
 
         <!-- <activity android:name=".view.scroll.ViewMoveActivity" /> -->
         <!-- Define Custom View Activity -->
@@ -455,8 +465,6 @@
             </intent-filter>
         </activity>
 
-
-
         <!-- Define Receiver -->
         <receiver
             android:name=".broadcast.MyBroadcastReceiver"
@@ -504,6 +512,7 @@
             android:name=".icp.binderpool.BinderPoolService"
             android:enabled="true"
             android:exported="true" />
+
 
     </application>
 
