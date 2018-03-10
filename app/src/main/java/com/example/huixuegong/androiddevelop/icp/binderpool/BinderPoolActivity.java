@@ -36,7 +36,7 @@ public class BinderPoolActivity extends Activity {
             public void run() {
                 getBinder();
             }
-        });
+        }).start();
 
         initView();
     }
