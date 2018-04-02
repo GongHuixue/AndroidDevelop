@@ -98,18 +98,20 @@ public class BaseAdapterActivity extends ListActivity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            ViewHolder viewHolder = null;
+            View view;
+            ViewHolder viewHolder;
             if(convertView == null) {
                 viewHolder = new ViewHolder();
-                convertView = mInflater.inflate(R.layout.activity_base_adapter, null);
+                view = mInflater.inflate(R.layout.activity_base_adapter, null);
 
-                viewHolder.name = (TextView)findViewById(R.id.name);
-                viewHolder.gender = (TextView)findViewById(R.id.gender);
-                viewHolder.detail = (Button)findViewById(R.id.detail_btn);
+                viewHolder.name = (TextView)view.findViewById(R.id.name);
+                viewHolder.gender = (TextView)view.findViewById(R.id.gender);
+                viewHolder.detail = (Button)view.findViewById(R.id.detail_btn);
 
-                convertView.setTag(viewHolder);
+                view.setTag(viewHolder);
             }else {
-                viewHolder = (ViewHolder)convertView.getTag();
+                view = convertView;
+                viewHolder = (ViewHolder)view.getTag();
             }
 
             viewHolder.name.setText((String)mData.get(position).get("name"));
@@ -121,7 +123,7 @@ public class BaseAdapterActivity extends ListActivity {
                 }
             });
 
-            return convertView;
+            return view;
         }
     }
 }
