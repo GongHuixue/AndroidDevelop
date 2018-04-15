@@ -66,6 +66,7 @@
     <string name="activity_layerDrawable">View/Drawable/Layer</string>
     <string name="activity_animationDrawable">View/Drawable/Animation</string>
     <string name="activity_animationDemo">View/Animation/Animation Demo</string>
+    <string name="activity_inflater">View/Inflater/Inflater add view</string>
     <!--Define Custom View Activity-->
     <string name="activity_smallbar">Custom UI/Small Bar</string>
     <string name="activity_fragmentlifestyle">Fragment/Life Cycle</string>

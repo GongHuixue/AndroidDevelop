@@ -92,7 +92,6 @@
         <flag name="basic" value="4"/>
         <flag name="chains" value="8"/>
     </attr>
-    <attr format="string" name="title"/>
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_allow_stacked_button_bar">true</bool>
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
