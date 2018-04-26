@@ -5,8 +5,15 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="23"
+        android:minSdkVersion="22"
         android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITEE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <meta-data
         android:name="android.support.VERSION"
@@ -19,7 +26,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:testOnly="true"
+        android:theme="@android:style/Theme.Material.Light.DarkActionBar" >
         <activity android:name="com.example.huixuegong.androiddevelop.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,35 +38,500 @@
         </activity>
         <activity
             android:name="com.example.huixuegong.androiddevelop.activity.HelloWorldActivity"
-            android:label="App/Activity/Hello World" >
+            android:label="@string/activity_hello_world" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.example.huixuegong.androiddevelop.activity.LaunchModeActivity"
-            android:label="App/Activity/Launch Mode" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.example.huixuegong.androiddevelop" />
 
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
         <activity
             android:name="com.example.huixuegong.androiddevelop.activity.ResultActivity"
-            android:label="App/Activity/Result" >
+            android:label="@string/activity_result" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.example.huixuegong.androiddevelop" />
 
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.huixuegong.androiddevelop.adapter.ArrayAdapterActivity" />
-        <activity android:name="com.example.huixuegong.androiddevelop.adapter.SimpleAdapterActivity" />
-        <activity android:name="com.example.huixuegong.androiddevelop.adapter.BaseAdapterActivity" />
+        <activity android:name="com.example.huixuegong.androiddevelop.activity.SubActivity" />
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.activity.LifeCycleActivity"
+            android:label="@string/activity_lifecycle" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.activity.launchmode.StandardActivity"
+            android:label="@string/activity_standard"
+            android:launchMode="standard" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.activity.launchmode.SingleTopActivity"
+            android:label="@string/activity_single_top"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.activity.launchmode.SingleTaskActivity"
+            android:label="@string/activity_single_task"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <!-- Adapter Activity -->
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.adapter.ArrayAdapterActivity"
+            android:label="@string/activity_array_adapter" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.adapter.SimpleAdapterActivity"
+            android:label="@string/activity_simple_adapter" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.adapter.BaseAdapterActivity"
+            android:label="@string/activity_base_adapter" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.example.huixuegong.androiddevelop.adapter.SimpleCursorAdapterActivity" />
+        <!-- Broadcast Receiver Activity -->
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.broadcast.StaticActivity"
+            android:label="@string/activity_static" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.broadcast.DynamicActivity"
+            android:label="@string/activity_dynamic" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.broadcast.LocalActivity"
+            android:label="@string/activity_local" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <!-- Data Storage Activity -->
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.storage.file.FileActivity"
+            android:label="@string/activity_file" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.storage.sqlite.SqliteActivity"
+            android:label="@string/activity_sqlite" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.storage.sharedpreferences.SharedActivity"
+            android:label="@string/activity_shared" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <!-- Define ContentProvider Activity -->
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.contentProvider.ContentProviderActivity"
+            android:label="@string/activity_contentprovider" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- Define ICP Activity -->
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.icp.aidl.AidlActivity"
+            android:label="@string/activity_aidl" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.icp.messenger.MessengerActivity"
+            android:label="@string/activity_messenger" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.icp.socket.TcpActivity"
+            android:label="@string/activity_tcp" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.icp.binderpool.BinderPoolActivity"
+            android:label="@string/activity_binderpool" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- Define Serial Activity -->
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.searial.searializable.SerializableActivity"
+            android:label="@string/activity_serialize" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.searial.parcelable.ParceableActivity"
+            android:label="@string/activity_parcel" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- Define Service Activity -->
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.service.IntentServiceActivity"
+            android:label="@string/activity_service" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- Define View Activity -->
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.view.scroll.ScrollerActivity"
+            android:label="@string/activity_scroller" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.view.scroll.ScrollActivity"
+            android:label="@string/activity_scroll" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.view.scroll.AnimationActivity"
+            android:label="@string/activity_animation" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.view.scroll.LayoutParamsActivity"
+            android:label="@string/activity_layoutparams" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <!-- Define View Drawable Activity -->
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.view.drawable.StateListDrawableActivity"
+            android:label="@string/activity_stateListDrawable" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.view.drawable.LayerDrawableActivity"
+            android:label="@string/activity_layerDrawable" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.view.drawable.AnimationDrawableActivity"
+            android:label="@string/activity_animationDrawable" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.view.animation.AnimationDemoActivity"
+            android:label="@string/activity_animationDemo" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.view.inflater.InflaterActivity"
+            android:label="@string/activity_inflater" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- <activity android:name=".view.scroll.ViewMoveActivity" /> -->
+        <!-- Define Custom View Activity -->
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.customizeui.SmallBarActivity"
+            android:label="@string/activity_smallbar" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <!-- Define Fragment Activity -->
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.fragment.lifestyle.FragmentLifeActivity"
+            android:label="@string/activity_fragmentlifestyle" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.fragment.bookfragment.BookFragmentActivity"
+            android:label="@string/activity_bookfragment" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <!-- Define Window Activity -->
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.window.WindowActivity"
+            android:label="@string/activity_windowManager" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.thread.ThreadActivity"
+            android:label="@string/activity_thread" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.thread.ThreadPoolActivity"
+            android:label="@string/activity_threadpool" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- Define Design Mode Activity -->
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.designmode.singleInstance.SingleInstanceActivity"
+            android:label="@string/activity_singleInstance" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.designmode.simplefactory.SimpleFactoryActivity"
+            android:label="@string/activity_simplefactory" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.designmode.Factory.FactoryActivity"
+            android:label="@string/activity_factory" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.designmode.abstractfactory.AbstractFactoryActivity"
+            android:label="@string/activity_abstractfactory" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.designmode.observer.ObserverActivity"
+            android:label="@string/activity_observer" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.designmode.agent.ProxyActivity"
+            android:label="@string/activity_proxy" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.designmode.adapter.AdapterActivity"
+            android:label="@string/activity_adapter" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.designmode.builder.BuilderActivity"
+            android:label="@string/activity_builder" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.huixuegong.androiddevelop.designmode.strategy.StrategeActivity"
+            android:label="@string/activity_strategy" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- Define Receiver -->
+        <receiver
+            android:name="com.example.huixuegong.androiddevelop.broadcast.MyBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Define Content Provider -->
+        <provider
+            android:name="com.example.huixuegong.androiddevelop.contentProvider.DatabaseProvider"
+            android:authorities="com.example.huixuegong.androiddevelop"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="com.example.huixuegong.androiddevelop.icp.aidl.AddService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop.AddService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.example.huixuegong.androiddevelop.icp.messenger.MessengerService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop.MessengerService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.example.huixuegong.androiddevelop.service.MyIntentService"
+            android:exported="false" />
+        <service
+            android:name="com.example.huixuegong.androiddevelop.service.MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.huixuegong.androiddevelop.icp.socket.TcpService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.huixuegong.androiddevelop.icp.binderpool.BinderPoolService"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>

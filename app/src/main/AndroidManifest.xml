@@ -322,6 +322,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".view.inflater.InflaterActivity"
+            android:label="@string/activity_inflater">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androiddevelop" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".view.recyclerview.RecyclerViewActivity"
             android:label="@string/activity_recyclerview_demo">
             <intent-filter>
@@ -521,7 +530,6 @@
             android:name=".icp.binderpool.BinderPoolService"
             android:enabled="true"
             android:exported="true" />
-
 
     </application>
 

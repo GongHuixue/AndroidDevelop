@@ -1,6 +1,40 @@
 {
     "logs": [
         {
+            "outputFile": "C:\\Users\\a\\AndroidStudioProjects\\AndroidDevelop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\a\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\92e26c3eda1b1892fcaaaedbf674197a\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "232"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "328",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "505"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\a\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\c54577946dd6e456eb70a39ec5ecbc6b\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\huixue.gong\\AndroidStudioProjects\\AndroidDevelop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
