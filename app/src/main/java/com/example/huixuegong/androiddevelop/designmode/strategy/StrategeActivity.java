@@ -36,7 +36,7 @@ public class StrategeActivity extends Activity {
             @Override
             public void onClick(View view) {
                 contetDel = new Context(new DelStrategy());
-                contetDel.Algorithm(3, 2);
+                sum = contetDel.Algorithm(3, 2);
                 Toast.makeText(StrategeActivity.this, "Del Algorithm 3 -2 =  " + String.valueOf(sum), Toast.LENGTH_LONG).show();
             }
         });
