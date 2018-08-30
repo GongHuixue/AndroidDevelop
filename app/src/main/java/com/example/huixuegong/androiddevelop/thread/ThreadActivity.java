@@ -81,10 +81,10 @@ public class ThreadActivity extends Activity {
     }
 
     private void initView() {
-        runnableButton = findViewById(R.id.new_runnable);
-        threadButton = findViewById(R.id.new_thread);
-        handlerButton = findViewById(R.id.new_handlerThread);
-        asyncButton = findViewById(R.id.new_async);
+        runnableButton = (Button) findViewById(R.id.new_runnable);
+        threadButton = (Button) findViewById(R.id.new_thread);
+        handlerButton = (Button) findViewById(R.id.new_handlerThread);
+        asyncButton = (Button) findViewById(R.id.new_async);
 
         runnableButton.setOnClickListener(new View.OnClickListener() {
             @Override

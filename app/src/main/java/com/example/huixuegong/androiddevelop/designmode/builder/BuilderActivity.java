@@ -17,7 +17,7 @@ public class BuilderActivity extends Activity {
         setContentView(R.layout.activity_builder);
 
         carBuilder = new BydBuilder();
-        Button builder = findViewById(R.id.builder);
+        Button builder = (Button) findViewById(R.id.builder);
         builder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

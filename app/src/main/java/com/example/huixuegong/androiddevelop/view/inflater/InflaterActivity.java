@@ -18,7 +18,7 @@ public class InflaterActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inflater);
 
-        container1 = this.findViewById(R.id.container);
+        container1 = (LinearLayout) this.findViewById(R.id.container);
 
         LayoutInflater inflater = LayoutInflater.from(InflaterActivity.this);
         /*inflater.inflate(R.layout.inflater_add, container1, true);

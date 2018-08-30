@@ -20,8 +20,8 @@ public class StrategeActivity extends Activity {
     }
 
     private void initView() {
-        Button add = findViewById(R.id.add_algorithm);
-        Button del = findViewById(R.id.del_algorithm);
+        Button add = (Button) findViewById(R.id.add_algorithm);
+        Button del = (Button) findViewById(R.id.del_algorithm);
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override

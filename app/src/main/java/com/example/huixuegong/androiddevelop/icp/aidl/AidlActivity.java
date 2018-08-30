@@ -52,11 +52,11 @@ public class AidlActivity extends Activity {
 
     private void initView() {
         Log.d(TAG, "init View");
-        etNum1 = findViewById(R.id.edittext_num1);
-        etNum2 = findViewById(R.id.edittext_num2);
-        textSum = findViewById(R.id.add_result);
+        etNum1 = (EditText)findViewById(R.id.edittext_num1);
+        etNum2 = (EditText)findViewById(R.id.edittext_num2);
+        textSum = (TextView) findViewById(R.id.add_result);
 
-        btnAdd = findViewById(R.id.btn_add);
+        btnAdd = (Button) findViewById(R.id.btn_add);
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -18,7 +18,7 @@ public class SingleTopActivity extends LaunchModeActivity {
 
         final String taskId = String.valueOf(getTaskId());
         final String objectMsg = SingleTopActivity.this.toString();
-        Button btn =  findViewById(R.id.btn_singletop);
+        Button btn =  (Button) findViewById(R.id.btn_singletop);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

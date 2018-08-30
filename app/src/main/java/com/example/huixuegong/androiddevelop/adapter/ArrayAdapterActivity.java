@@ -15,7 +15,7 @@ public class ArrayAdapterActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_array_adapter);
-        ListView lv = findViewById(R.id.array_list);
+        ListView lv = (ListView) findViewById(R.id.array_list);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(ArrayAdapterActivity.this, android.R.layout.simple_list_item_1, os);
         lv.setAdapter(arrayAdapter);
     }

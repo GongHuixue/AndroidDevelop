@@ -16,11 +16,11 @@ public class FragmentLifeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment_life);
 
-        final Button startActivity, addFragment, replaceFragment, finish;
-        startActivity = findViewById(R.id.start_activity);
-        addFragment = findViewById(R.id.add_fragment);
-        replaceFragment = findViewById(R.id.replace_fragment);
-        finish = findViewById(R.id.finish);
+        Button startActivity, addFragment, replaceFragment, finish;
+        startActivity = (Button) findViewById(R.id.start_activity);
+        addFragment = (Button) findViewById(R.id.add_fragment);
+        replaceFragment = (Button) findViewById(R.id.replace_fragment);
+        finish = (Button) findViewById(R.id.finish);
 
         startActivity.setOnClickListener(new View.OnClickListener() {
             @Override

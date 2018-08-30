@@ -18,8 +18,8 @@ public class SimpleFactoryActivity extends Activity {
 
         factory = new CarFactory();
 
-        Button byd = findViewById(R.id.byd);
-        Button greatewall = findViewById(R.id.greatewall);
+        Button byd = (Button) findViewById(R.id.byd);
+        Button greatewall = (Button) findViewById(R.id.greatewall);
 
         byd.setOnClickListener(new View.OnClickListener() {
             @Override

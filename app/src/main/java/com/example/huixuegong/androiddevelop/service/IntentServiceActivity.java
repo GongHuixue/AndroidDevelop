@@ -34,15 +34,15 @@ public class IntentServiceActivity extends Activity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intent_service);
-        Button startService = findViewById(R.id.start_service);
-        Button stopService = findViewById(R.id.stop_service);
+        Button startService = (Button) findViewById(R.id.start_service);
+        Button stopService = (Button) findViewById(R.id.stop_service);
         startService.setOnClickListener(this);
         stopService.setOnClickListener(this);
-        Button bindService = findViewById(R.id.bind_service);
-        Button unbindService = findViewById(R.id.unbind_service);
+        Button bindService = (Button) findViewById(R.id.bind_service);
+        Button unbindService = (Button) findViewById(R.id.unbind_service);
         bindService.setOnClickListener(this);
         unbindService.setOnClickListener(this);
-        Button startIntentService = findViewById(R.id.start_intent_service);
+        Button startIntentService = (Button) findViewById(R.id.start_intent_service);
         startIntentService.setOnClickListener(this);
     }
 

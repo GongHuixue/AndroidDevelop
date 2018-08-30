@@ -60,10 +60,10 @@ public class TcpActivity extends Activity implements View.OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tcp);
-        mMessageTextView = findViewById(R.id.msg_container);
-        mSendButton =  findViewById(R.id.send);
+        mMessageTextView = (TextView) findViewById(R.id.msg_container);
+        mSendButton =  (Button) findViewById(R.id.send);
         mSendButton.setOnClickListener(this);
-        mMessageEditText = findViewById(R.id.msg);
+        mMessageEditText = (EditText) findViewById(R.id.msg);
         Intent service = new Intent(this, TcpService.class);
         startService(service);
         new Thread() {

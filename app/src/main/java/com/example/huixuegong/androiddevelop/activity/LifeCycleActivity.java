@@ -18,7 +18,7 @@ public class LifeCycleActivity extends Activity {
         Log.d(TAG, "onCreate Enter");
         setContentView(R.layout.activity_life_cycle);
 
-        Button btn = findViewById(R.id.start_hello_world);
+        Button btn = (Button) findViewById(R.id.start_hello_world);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

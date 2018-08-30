@@ -18,7 +18,7 @@ public class SharedActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shared);
 
-        Button saveData = findViewById(R.id.btn_shared_set);
+        Button saveData = (Button) findViewById(R.id.btn_shared_set);
         saveData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,7 +31,7 @@ public class SharedActivity extends Activity {
             }
         });
 
-        Button restoreData = findViewById(R.id.btn_shared_get);
+        Button restoreData = (Button) findViewById(R.id.btn_shared_get);
         restoreData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

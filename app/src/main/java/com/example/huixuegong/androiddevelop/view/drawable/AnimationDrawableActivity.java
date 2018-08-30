@@ -17,11 +17,11 @@ public class AnimationDrawableActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animation_drawable);
 
-        final ImageView image = findViewById(R.id.image);
+        final ImageView image = (ImageView) findViewById(R.id.image);
         final Animation anim = AnimationUtils.loadAnimation(this, R.anim.animation);
         anim.setFillAfter(true);
 
-        Button button = findViewById(R.id.start_anim);
+        Button button = (Button) findViewById(R.id.start_anim);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

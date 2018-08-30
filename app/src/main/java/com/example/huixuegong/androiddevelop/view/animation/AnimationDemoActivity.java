@@ -25,11 +25,11 @@ public class AnimationDemoActivity extends Activity {
     }
 
     private void initView() {
-        Button rotate = findViewById(R.id.rotate);
-        Button scale = findViewById(R.id.scale);
-        Button translate = findViewById(R.id.translate);
-        final Button alpha = findViewById(R.id.alpha);
-        final ImageView image = findViewById(R.id.animationimage);
+        Button rotate = (Button) findViewById(R.id.rotate);
+        Button scale = (Button) findViewById(R.id.scale);
+        Button translate = (Button) findViewById(R.id.translate);
+        final Button alpha = (Button) findViewById(R.id.alpha);
+        final ImageView image = (ImageView) findViewById(R.id.animationimage);
 
         rotate.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -34,7 +34,7 @@ public class LocalActivity extends Activity {
         intentFilter.addAction("com.example.huixuegong.androiddevelop.LOCAL_BROADCAST");
         localBroadcastManager.registerReceiver(receiver, intentFilter);
 
-        Button button = findViewById(R.id.btn_local);
+        Button button = (Button) findViewById(R.id.btn_local);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -26,7 +26,7 @@ public class FileActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_file);
 
-        edit = findViewById(R.id.file_edit);
+        edit = (EditText) findViewById(R.id.file_edit);
         String input_text = load();
         if(input_text.length() > 0) {
             edit.setText(input_text);

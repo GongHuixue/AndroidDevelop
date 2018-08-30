@@ -24,7 +24,7 @@ public class WindowActivity extends Activity implements View.OnTouchListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_window);
 
-        mWindowButton = findViewById(R.id.create_window);
+        mWindowButton = (Button) findViewById(R.id.create_window);
         manager = (WindowManager)getSystemService(Context.WINDOW_SERVICE);
         Log.d(TAG, "onCreate Enter");
     }

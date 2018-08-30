@@ -17,8 +17,8 @@ public class SubActivity extends Activity {
         setContentView(R.layout.activity_sub);
         Intent mainIntent = getIntent();
         String msg = mainIntent.getStringExtra("Main");
-        TextView textView = findViewById(R.id.text_sub);
-        Button button = findViewById(R.id.button_sub);
+        TextView textView = (TextView) findViewById(R.id.text_sub);
+        Button button = (Button) findViewById(R.id.button_sub);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

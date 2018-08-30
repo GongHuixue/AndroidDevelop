@@ -23,9 +23,9 @@ public class ObserverActivity extends Activity {
     }
 
     private void initView() {
-        Button add = findViewById(R.id.add_lister);
-        Button del = findViewById(R.id.del_listen);
-        Button notify = findViewById(R.id.notify);
+        Button add = (Button) findViewById(R.id.add_lister);
+        Button del = (Button) findViewById(R.id.del_listen);
+        Button notify = (Button) findViewById(R.id.notify);
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override

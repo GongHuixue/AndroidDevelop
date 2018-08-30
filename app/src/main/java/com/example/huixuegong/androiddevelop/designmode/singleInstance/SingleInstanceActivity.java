@@ -16,7 +16,7 @@ public class SingleInstanceActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_single_instance);
 
-        Button single = findViewById(R.id.single);
+        Button single = (Button) findViewById(R.id.single);
         single.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

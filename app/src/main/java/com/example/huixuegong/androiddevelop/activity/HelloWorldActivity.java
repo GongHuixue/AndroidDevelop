@@ -2,13 +2,22 @@ package com.example.huixuegong.androiddevelop.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.example.huixuegong.androiddevelop.R;
 import com.example.huixuegong.androiddevelop.searial.parcelable.Car;
 import com.example.huixuegong.androiddevelop.searial.searializable.Person;
 
+import java.text.Collator;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Locale;
+
 public class HelloWorldActivity extends Activity {
+    private final static String TAG = HelloWorldActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

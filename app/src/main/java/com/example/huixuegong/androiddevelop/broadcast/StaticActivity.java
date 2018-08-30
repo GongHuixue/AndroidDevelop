@@ -17,7 +17,7 @@ public class StaticActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_static);
 
-        Button button = findViewById(R.id.btn_sendbroadcast);
+        Button button = (Button) findViewById(R.id.btn_sendbroadcast);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

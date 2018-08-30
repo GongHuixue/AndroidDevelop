@@ -51,11 +51,11 @@ public class BinderPoolActivity extends Activity {
     }
 
     private void initView() {
-        etNum1 = findViewById(R.id.edittext_num1);
-        etNum2 = findViewById(R.id.edittext_num2);
-        textSum = findViewById(R.id.add_result);
+        etNum1 = (EditText) findViewById(R.id.edittext_num1);
+        etNum2 = (EditText) findViewById(R.id.edittext_num2);
+        textSum = (TextView) findViewById(R.id.add_result);
 
-        btnAdd = findViewById(R.id.btn_add);
+        btnAdd = (Button) findViewById(R.id.btn_add);
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,11 +71,11 @@ public class BinderPoolActivity extends Activity {
             }
         });
 
-        etNum3 = findViewById(R.id.edittext_num3);
-        etNum4 = findViewById(R.id.edittext_num4);
-        textDel = findViewById(R.id.del_result);
+        etNum3 = (EditText) findViewById(R.id.edittext_num3);
+        etNum4 = (EditText) findViewById(R.id.edittext_num4);
+        textDel = (TextView) findViewById(R.id.del_result);
 
-        btnDel = findViewById(R.id.btn_del);
+        btnDel = (Button) findViewById(R.id.btn_del);
         btnDel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

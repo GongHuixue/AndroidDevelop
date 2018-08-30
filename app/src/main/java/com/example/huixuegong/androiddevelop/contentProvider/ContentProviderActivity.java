@@ -20,7 +20,7 @@ public class ContentProviderActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_content_provider);
-        Button addData = findViewById(R.id.btn_add);
+        Button addData = (Button) findViewById(R.id.btn_add);
         addData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,7 +35,7 @@ public class ContentProviderActivity extends Activity {
                 newId = newUri.getPathSegments().get(1);
             }
         });
-        Button queryData = findViewById(R.id.btn_query);
+        Button queryData = (Button) findViewById(R.id.btn_query);
         queryData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,7 +57,7 @@ public class ContentProviderActivity extends Activity {
                 }
             }
         });
-        Button updateData = findViewById(R.id.btn_update);
+        Button updateData = (Button) findViewById(R.id.btn_update);
         updateData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,7 +70,7 @@ public class ContentProviderActivity extends Activity {
                 getContentResolver().update(uri, values, null, null);
             }
         });
-        Button deleteData =  findViewById(R.id.btn_del);
+        Button deleteData =  (Button) findViewById(R.id.btn_del);
         deleteData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -22,9 +22,9 @@ public class AbstractFactoryActivity extends Activity {
     }
 
     public void initView() {
-        Button fuel = findViewById(R.id.byd_fuel);
-        Button hybrid = findViewById(R.id.byd_hybrid);
-        Button electric = findViewById(R.id.byd_electric);
+        Button fuel = (Button) findViewById(R.id.byd_fuel);
+        Button hybrid = (Button) findViewById(R.id.byd_hybrid);
+        Button electric = (Button) findViewById(R.id.byd_electric);
 
         fuel.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -19,7 +19,7 @@ public class SqliteActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sqlite);
         dbHelper = new MyDatabaseHelper(this, "BookStore.db", null, 2);
-        Button createDatabase = findViewById(R.id.btn_create);
+        Button createDatabase = (Button) findViewById(R.id.btn_create);
         createDatabase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,7 +27,7 @@ public class SqliteActivity extends Activity {
             }
         });
 
-        Button addData = findViewById(R.id.btn_add);
+        Button addData = (Button) findViewById(R.id.btn_add);
         addData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,7 +49,7 @@ public class SqliteActivity extends Activity {
                 values.clear();
             }
         });
-        Button updateData = findViewById(R.id.btn_update);
+        Button updateData = (Button) findViewById(R.id.btn_update);
         updateData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +60,7 @@ public class SqliteActivity extends Activity {
                 db.update("Book", values, "name = ?", new String[] { "The Da Vinci Code" });
             }
         });
-        Button deleteButton = findViewById(R.id.btn_del);
+        Button deleteButton = (Button) findViewById(R.id.btn_del);
         deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,7 +68,7 @@ public class SqliteActivity extends Activity {
                 db.delete("Book", "pages > ?", new String[] { "500" });
             }
         });
-        Button queryButton = findViewById(R.id.btn_query);
+        Button queryButton = (Button) findViewById(R.id.btn_query);
         queryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

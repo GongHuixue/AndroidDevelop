@@ -21,8 +21,8 @@ public class ResultActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-        textView = findViewById(R.id.text_main);
-        button = findViewById(R.id.button_main);
+        textView = (TextView) findViewById(R.id.text_main);
+        button = (Button) findViewById(R.id.button_main);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -24,7 +24,7 @@ public class DynamicActivity extends Activity {
         intentFilter.addAction("com.example.huixuegong.androiddevelop.broadcast.MyBroadcastReceiver");
         registerReceiver(receiver, intentFilter);
 
-        Button button = findViewById(R.id.btn_dynamic);
+        Button button = (Button) findViewById(R.id.btn_dynamic);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -25,12 +25,12 @@ public class FactoryActivity extends Activity {
     }
 
     public void initView() {
-        Button tang = findViewById(R.id.byd_tang);
-        Button song = findViewById(R.id.byd_song);
-        Button yuan = findViewById(R.id.byd_yuan);
-        Button h2 = findViewById(R.id.haval_h2);
-        Button h6 = findViewById(R.id.haval_h6);
-        Button h9 = findViewById(R.id.haval_h9);
+        Button tang = (Button) findViewById(R.id.byd_tang);
+        Button song = (Button) findViewById(R.id.byd_song);
+        Button yuan = (Button) findViewById(R.id.byd_yuan);
+        Button h2 = (Button) findViewById(R.id.haval_h2);
+        Button h6 = (Button) findViewById(R.id.haval_h6);
+        Button h9 = (Button) findViewById(R.id.haval_h9);
 
         tang.setOnClickListener(new View.OnClickListener() {
             @Override

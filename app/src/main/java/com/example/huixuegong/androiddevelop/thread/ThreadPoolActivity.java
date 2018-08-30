@@ -31,8 +31,8 @@ public class ThreadPoolActivity extends Activity {
     }
 
     private void initView() {
-        Button singleThread = findViewById(R.id.btn_singlepool);
-        Button multiThread = findViewById(R.id.btn_multipool);
+        Button singleThread = (Button) findViewById(R.id.btn_singlepool);
+        Button multiThread = (Button) findViewById(R.id.btn_multipool);
 
         singleThread.setOnClickListener(new View.OnClickListener() {
             @Override

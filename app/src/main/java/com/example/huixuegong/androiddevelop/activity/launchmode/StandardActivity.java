@@ -22,7 +22,7 @@ public class StandardActivity extends LaunchModeActivity {
         final String objectMsg = StandardActivity.this.toString();
 
         Log.d(TAG, "Current task id = " + taskId);
-        Button btn = findViewById(R.id.btn_standard);
+        Button btn = (Button) findViewById(R.id.btn_standard);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
